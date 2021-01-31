@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>io.github.kilmajster</groupId>
+	<artifactId>welcome-page-starter</artifactId>
+
+	<version>0.0.1</version>
+
+	<name>📦 welcome-page-starter - Main module</name>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.4.2</version>
+		<relativePath/>
+	</parent>
+
+	<properties>
+		<java.version>1.8</java.version>
+
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+	</properties>
+
+	<description>Spring boot starter that provides simplest blog as possible! ⚡️</description>
+	<url>https://github.com/kilmajster/minimal-blog-spring-boot-starter</url>
+	<inceptionYear>2020</inceptionYear>
+
+	<issueManagement>
+		<system>github</system>
+		<url>https://github.com/kilmajster/minimal-blog-spring-boot-starter/issues</url>
+	</issueManagement>
+
+	<licenses>
+		<license>
+			<name>MIT</name>
+			<url>https://github.com/kilmajster/minimal-blog-spring-boot-starter/blob/master/LICENSE</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Łukasz Włódarczyk</name>
+			<email>lukasz.createam@gmail.com</email>
+		</developer>
+	</developers>
+
+	<ciManagement>
+		<system>travis-ci</system>
+		<url>https://travis-ci.org/kilmajster/minimal-blog-spring-boot-starter</url>
+	</ciManagement>
+
+	<scm>
+		<connection>scm:git:git://github.com/kilmajster/minimal-blog-spring-boot-starter.git</connection>
+		<developerConnection>scm:git:ssh://github.com:kilmajster/minimal-blog-spring-boot-starter.git
+		</developerConnection>
+		<url>http://github.com/kilmajster/minimal-blog-spring-boot-starter</url>
+	</scm>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+
+
+
+	<dependencies>
+
+		<dependency>
+			<groupId>io.github.kilmajster</groupId>
+			<artifactId>welcome-page-api</artifactId>
+			<version>${version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

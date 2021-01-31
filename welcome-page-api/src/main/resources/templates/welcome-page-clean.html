@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title th:text="${title}">Dummy title</title>
+</head>
+<body>
+    <div th:remove="tag" th:utext="${html_body_content}"></div>
+</body>
+</html>
