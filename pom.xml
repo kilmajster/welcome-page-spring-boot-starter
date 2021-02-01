@@ -12,7 +12,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>welcome-page-api</module>
+        <module>welcome-page-starter-api</module>
         <module>welcome-page-starter</module>
         <module>welcome-page-starter-integration-tests</module>
     </modules>

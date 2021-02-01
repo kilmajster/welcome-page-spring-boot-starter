@@ -76,7 +76,7 @@
 
 		<dependency>
 			<groupId>io.github.kilmajster</groupId>
-			<artifactId>welcome-page-api</artifactId>
+			<artifactId>welcome-page-starter-api</artifactId>
 			<version>${version}</version>
 		</dependency>
 
